@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Poiret';
+    src: url("../fonts/PoiretOne-Regular.ttf");
+
+}
+@font-face {
+    font-family: 'Protomolecule';
+    src: url("../fonts/Protomolecule-Regular.ttf");
+}
+.header{
+    font-family: 'Protomolecule', "Arial";
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    background-color: grey;
+    padding-bottom: 1.3em;
+    border-bottom: solid 3px black;
+}
+#pagetitle{
+    float: left;
+}
+
+#artlinks{
+    float: right;
+}
+
+.footer{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    background-color: grey;
+    font-family: 'Protomolecule', 'Arial';
+    font-size: 2em;
+    border-top: solid 3px black;
+}
+
+.footer, #author{
+    text-align: left;
+}
+
+.footer, #linkedin{
+    text-align: right;
+}
