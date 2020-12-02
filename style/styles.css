@@ -8,22 +8,20 @@
     src: url("../fonts/Protomolecule-Regular.ttf");
 }
 .header{
+    position: absolute;
+    top: 0;
     font-family: 'Protomolecule', "Arial";
     font-size: 3em;
-    text-align: center;
     width: 100%;
     background-color: grey;
-    padding-bottom: 1.3em;
     border-bottom: solid 3px black;
+    overflow: auto;
 }
-#pagetitle{
-    float: left;
+#headerbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-#artlinks{
-    float: right;
-}
-
 .footer{
     width: 100%;
     position:absolute;
@@ -32,12 +30,52 @@
     font-family: 'Protomolecule', 'Arial';
     font-size: 2em;
     border-top: solid 3px black;
+    overflow: auto;
+}
+#footerbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    color: black;
+}
+a:hover{
+    color:white
+}
+form{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
-.footer, #author{
-    text-align: left;
+#question{
+    font-family: 'Poiret','Arial';
+    font-size: 1.5em;
+    font-weight: bold;
+    border: solid 1.5px;
+    border-radius: 20px;
+    resize: none;
+    outline: none;
+    padding-inline-start: 0.5em;
+    opacity: 70%;
+}
+#button{
+    background-color: grey;
+    border: solid;
+    border-radius: 10px;
+    color: white;
+    padding: 1em 1em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    margin-left: 70%;
+}
+#button:hover {
+    background-color: rgb(49, 49, 49);
 }
 
-.footer, #linkedin{
-    text-align: right;
+html{
+    background-image: url(../media/windows_xp_bliss-1920x1080.jpg);
 }
