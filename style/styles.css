@@ -7,6 +7,11 @@
     font-family: 'Protomolecule';
     src: url("../fonts/Protomolecule-Regular.ttf");
 }
+
+body{
+    margin: 0;
+}
+
 .header{
     position: absolute;
     top: 0;
@@ -14,7 +19,7 @@
     font-size: 3em;
     width: 100%;
     background-color: grey;
-    border-bottom: solid 3px black;
+    border-bottom: solid 4px black;
     overflow: auto;
 }
 #headerbox{
@@ -32,6 +37,7 @@
     border-top: solid 3px black;
     overflow: auto;
 }
+
 #footerbox{
     display: flex;
     flex-direction: row;
@@ -43,6 +49,7 @@ a{
 a:hover{
     color:white
 }
+
 form{
     margin-left: 20%;
     margin-right: 20%;
@@ -50,7 +57,14 @@ form{
     margin-bottom: 15%;
 }
 
+.width100{
+    width: 100%;
+}
+
+
 #question{
+    width: 100%;
+    max-width: 75%;
     font-family: 'Poiret','Arial';
     font-size: 1.5em;
     font-weight: bold;
@@ -77,5 +91,6 @@ form{
 }
 
 html{
-    background-image: url(../media/windows_xp_bliss-1920x1080.jpg);
+    background: url("../media/windows_xp_bliss-1920x1080.jpg") no-repeat center fixed;
 }
+
