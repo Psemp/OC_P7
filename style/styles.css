@@ -64,7 +64,7 @@ form{
 
 #question{
     width: 100%;
-    max-width: 75%;
+    max-width: 80%;
     font-family: 'Poiret','Arial';
     font-size: 1.5em;
     font-weight: bold;
@@ -74,17 +74,19 @@ form{
     outline: none;
     padding-inline-start: 0.5em;
     opacity: 70%;
+    margin-right: 20%;
 }
 #button{
     background-color: grey;
     border: solid;
     border-radius: 10px;
     color: white;
-    padding: 1em 1em;
+    padding: 0.7em 0.7em;
     text-align: center;
     display: inline-block;
     font-size: 1.5em;
-    margin-left: 70%;
+    margin-left: 50%;
+    outline: none;
 }
 #button:hover {
     background-color: rgb(49, 49, 49);
