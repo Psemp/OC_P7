@@ -10,25 +10,30 @@
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                    <span class="col">GrandPy</span>
-                    <span class="col"><a href="./artists.html" alt="Artists" target="_self" name="artists">Art Links</a></span>
+            <div class="container-fluid">
+                <div class="row" id="rowsofheader">
+                    <div class="col" style="text-align: left;">GrandPy</div>
+                    <div class="col" style="text-align: right;"><a href="./artists.html" alt="Artists" target="_self" name="artists">Art Links</a></div>
+                </div>
             </div>
         </header>
         <div class="container" style="opacity: 100%;">
             <div class="row">
                 <form method="GET">
-                    <textarea class="translate-middle" name="message" rows="3" placeholder="Pose moi une question :"></textarea>
+                    <textarea id="question" class="translate-middle" name="message" rows="3" placeholder="Pose moi une question :"></textarea>
                     <button class="validate" type="button" onclick="alertButton()">Demande à GrandPy!</button>
                 </form>
             </div>
+            <div class="row">
+                <img src="../media/oldman.png" class="image-fluid float-start" alt="GrandPy">
+            </div>
         </div>
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col">Pierre Sempere</div>
-                    <div class="col"><a href="https://github.com/Psemp/OC_P7" alt="Github link" target="_blank" name="Github">Github  </a></div>
-                    <div class="col"><a href="https://www.linkedin.com/in/pierre-semp%C3%A9r%C3%A9-25714417a/" alt="linkedin" target="_blank" name="linkedin">  LinkedIn</a></div>
+                    <div class="col" style="text-align: center;"><a href="https://github.com/Psemp/OC_P7" alt="Github link" target="_blank" name="Github">Github  </a></div>
+                    <div class="col" style="text-align: right;"><a href="https://www.linkedin.com/in/pierre-semp%C3%A9r%C3%A9-25714417a/" alt="linkedin" target="_blank" name="linkedin">  LinkedIn</a></div>
                 </div>
             </div>
         </footer>

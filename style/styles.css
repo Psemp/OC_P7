@@ -10,6 +10,7 @@
 
 .header{
     position: absolute;
+    height: 1.4em;
     top: 0;
     font-family: 'Protomolecule', "Arial";
     font-size: 3em;
@@ -17,9 +18,9 @@
     width: 100%;
     background-color: grey;
     border-bottom: solid 4px black;
-    overflow: auto;
     opacity: 80%;
-
+    margin-bottom: 10%;
+    overflow: hidden;
 }
 
 .footer{
@@ -32,7 +33,8 @@
     border-top: solid 3px black;
     overflow: auto;
     opacity: 80%;
-
+    color: black;
+    overflow: hidden;
 }
 
 
@@ -74,7 +76,7 @@ textarea{
     resize: none;
     outline: none;
     padding-inline-start: 0.5em;
-    opacity: 70%;
+    opacity: 90%;
     margin-right: 20%;
 }
 .validate{
