@@ -3,31 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>GrandPy Bot</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="../style/styles.css" rel="stylesheet">
         <script src="../scripts/script.js"></script>
     </head>
     <body>
-    <header class="header">
-        <div id="headerbox">
-                <span id="pagetitle">GrandPy</span>
-                <span id="artlinks"><a href="./artists.html" alt="Artists" target="_self" name="artists">Art Links</a></span>
+        <header class="header">
+            <div class="container">
+                    <span class="col">GrandPy</span>
+                    <span class="col"><a href="./artists.html" alt="Artists" target="_self" name="artists">Art Links</a></span>
+            </div>
+        </header>
+        <div class="container" style="opacity: 100%;">
+            <div class="row">
+                <form method="GET">
+                    <textarea class="translate-middle" name="message" rows="3" placeholder="Pose moi une question :"></textarea>
+                    <button class="validate" type="button" onclick="alertButton()">Demande à GrandPy!</button>
+                </form>
+            </div>
         </div>
-    </header>
-    <div class="width100">
-        <form method="GET">
-            <textarea id="question" name="message" rows="3" placeholder="Pose moi une question :"></textarea>
-            <br/>
-            <button type="button" id ="button" onclick="alertButton()">Demande à GrandPy!</button>
-        </form>
-    </div>
-    
-    <footer class="footer">
-        <div id="footerbox">
-            <div>Pierre Sempere</div>
-            <div><a href="https://github.com/Psemp/OC_P7" alt="Github link" target="_blank" name="Github">Github  </a></div>
-            <div><a href="https://www.linkedin.com/in/pierre-semp%C3%A9r%C3%A9-25714417a/" alt="linkedin" target="_blank" name="linkedin">  LinkedIn</a></div>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">Pierre Sempere</div>
+                    <div class="col"><a href="https://github.com/Psemp/OC_P7" alt="Github link" target="_blank" name="Github">Github  </a></div>
+                    <div class="col"><a href="https://www.linkedin.com/in/pierre-semp%C3%A9r%C3%A9-25714417a/" alt="linkedin" target="_blank" name="linkedin">  LinkedIn</a></div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

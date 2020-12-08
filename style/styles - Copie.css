@@ -8,12 +8,15 @@
     src: url("../fonts/Protomolecule-Regular.ttf");
 }
 
+body{
+    margin: 0;
+}
+
 .header{
     position: absolute;
     top: 0;
     font-family: 'Protomolecule', "Arial";
     font-size: 3em;
-    color: black;
     width: 100%;
     background-color: grey;
     border-bottom: solid 4px black;
@@ -21,7 +24,11 @@
     opacity: 80%;
 
 }
-
+#headerbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .footer{
     width: 100%;
     position:absolute;
@@ -35,12 +42,47 @@
 
 }
 
-
-body{
-    margin-top: 5em;
+#footerbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+a{
+    color: black;
+}
+a:hover{
+    color:white
 }
 
+form{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.width100{
+    width: 100%;
+}
+
+
+#question{
+    width: 100%;
+    max-width: 80%;
+    font-family: 'Poiret','Arial';
+    font-size: 1.5em;
+    font-weight: bold;
+    border: solid 1.5px;
+    border-radius: 20px;
+    resize: none;
+    outline: none;
+    padding-inline-start: 0.5em;
+    opacity: 70%;
+    margin-right: 20%;
+}
 #button{
+    position: relative;
     background-color: grey;
     border: solid 2px;
     border-radius: 10px;
@@ -57,54 +99,7 @@ body{
     background-color: rgb(49, 49, 49);
 }
 
-a{
-    color: black;
-}
-a:hover{
-    color:white
-}
-textarea{
-    width: 50%;
-    max-width: 80%;
-    font-family: 'Poiret','Arial';
-    font-size: 1.5em;
-    font-weight: bold;
-    border: solid 1.5px;
-    border-radius: 20px;
-    resize: none;
-    outline: none;
-    padding-inline-start: 0.5em;
-    opacity: 70%;
-    margin-right: 20%;
-}
-.validate{
-    position: absolute;
-    bottom: 45%;
-    margin-left: auto;
-    background-color: grey;
-    border: solid 2px;
-    border-radius: 10px;
-    color: white;
-    padding: 0.6em 0.6em;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.3em;
-    margin-left: 0%;
-    outline: none;
-    opacity: 100%;
-}
-.validate:hover {
-    background-color: rgb(49, 49, 49);
-}
-
-body{
+html{
     background: url("../media/benjamin-last-scifistreet1b-blast-post.jpg") no-repeat center fixed;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
-}
-
-.translate-middle{
-    position: absolute;
-    bottom: 50%;
 }
