@@ -21,6 +21,8 @@ body{
     background-color: grey;
     border-bottom: solid 4px black;
     overflow: auto;
+    opacity: 80%;
+
 }
 #headerbox{
     display: flex;
@@ -36,6 +38,8 @@ body{
     font-size: 2em;
     border-top: solid 3px black;
     overflow: auto;
+    opacity: 80%;
+
 }
 
 #footerbox{
@@ -78,13 +82,13 @@ form{
 }
 #button{
     background-color: grey;
-    border: solid;
+    border: solid 2px;
     border-radius: 10px;
     color: white;
-    padding: 0.7em 0.7em;
+    padding: 0.6em 0.6em;
     text-align: center;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 50%;
     outline: none;
 }
@@ -93,6 +97,10 @@ form{
 }
 
 html{
-    background: url("../media/windows_xp_bliss-1920x1080.jpg") no-repeat center fixed;
+    background: url("../media/benjamin-last-scifistreet1b-blast-post.jpg") no-repeat center fixed;
+    background-size: cover;
 }
 
+form{
+    display: flex;
+}
