@@ -45,6 +45,7 @@ body{
 #footerbox{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     justify-content: space-between;
 }
 a{
@@ -91,6 +92,7 @@ form{
     font-size: 1.3em;
     margin-left: 50%;
     outline: none;
+    opacity: 90%;
 }
 #button:hover {
     background-color: rgb(49, 49, 49);
@@ -99,8 +101,4 @@ form{
 html{
     background: url("../media/benjamin-last-scifistreet1b-blast-post.jpg") no-repeat center fixed;
     background-size: cover;
-}
-
-form{
-    display: flex;
 }
