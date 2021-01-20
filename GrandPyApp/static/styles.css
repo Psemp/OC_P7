@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Poiret';
-    src: url("../fonts/PoiretOne-Regular.ttf");
-
-}
-@font-face {
-    font-family: 'Protomolecule';
-    src: url("../fonts/Protomolecule-Regular.ttf");
-}
-
 .header{
     position: absolute;
     height: 1.4em;
@@ -98,14 +88,6 @@ textarea{
 .validate:hover {
     background-color: rgb(49, 49, 49);
 }
-
-body{
-    background: url("../media/benjamin-last-scifistreet1b-blast-post.jpg") no-repeat center fixed;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-}
-
 .translate-middle{
     position: absolute;
     bottom: 50%;
