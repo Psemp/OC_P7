@@ -1,6 +1,17 @@
+$("document").ready(function(){
 
-function alertButton(){
-    let question = document.getElementById("question").value;
-    answer = question.toUpperCase();
-    document.getElementById("question").value = answer;
-}
+    $("#validate").on('click',function(){
+        
+        let question = $("#question").val();
+        console.log(question);
+
+        $.ajax({
+            url: "http://localhost:5000/process",
+            type: "POST",
+            data: {"question": question},
+
+        }).done(function(data) {
+            console.log(data);
+        });
+    });
+});

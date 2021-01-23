@@ -8,6 +8,7 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="../static/styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
             @font-face {
                 font-family: 'Poiret';
@@ -39,9 +40,9 @@
         </header>
         <div class="container" style="opacity: 100%;">
             <div class="row">
-                <form method="GET">
-                    <textarea id="question" class="translate-middle" name="message" rows="3" placeholder="Pose moi une question :"></textarea>
-                    <button class="validate" type="button" onclick="alertButton()">Demande à GrandPy!</button>
+                <form method="POST">
+                    <textarea id="question" class="translate-middle" rows="3" placeholder="Pose moi une question :"></textarea>
+                    <button id="validate" type="button">Demande à GrandPy!</button>
                 </form>
             </div>
             <div class="row">
