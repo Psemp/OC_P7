@@ -1,0 +1,9 @@
+{
+    "location" : ["ou","ou est","ou se trouve","ou trouver","situe"],
+
+    "date":["quand","a quelle date","annee","date"],
+        
+    "person":["quelle personne", "qui est", "qui a"],
+        
+    "funny":["blague", "histoire drole","rire"]
+}

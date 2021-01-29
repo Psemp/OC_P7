@@ -9,8 +9,8 @@ $("document").ready(function(){
             url: "http://localhost:5000/process",
             type: "POST",
             data: {"question": question},
-
         }).done(function(data) {
+            $('#question').val(data['answer']);
             console.log(data);
         });
     });
