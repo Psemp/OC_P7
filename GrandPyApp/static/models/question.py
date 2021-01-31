@@ -1,5 +1,6 @@
 class Question:
-    def __init__(user_input, self, intent, target):
-        self.user_input = user_input
-        self.intent = intent
-        self.target = target
+    def __init__(self, user_input):
+        self.question = user_input.lower()
+        self.intent = "generic"
+        self.target = "generic"
+        self.answer = "generic"

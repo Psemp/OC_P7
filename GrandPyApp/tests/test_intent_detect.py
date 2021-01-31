@@ -1,4 +1,4 @@
-import json, os, sys
+import json, pathlib
 
 from static.algorythm import identify_intent
 
@@ -26,9 +26,9 @@ assert identify_intent(question1, intent_dict) == "location"
 assert identify_intent(question2, intent_dict) == "location"
 assert identify_intent(question3, intent_dict) == "location"
 assert identify_intent(question4, intent_dict) == "funny"
-assert identify_intent(question5, intent_dict) not in intent_dict.keys
+assert identify_intent(question5, intent_dict) == "generic"
 assert identify_intent(question6, intent_dict) == "date"
 assert identify_intent(question7, intent_dict) == "funny"
-assert identify_intent(question8, intent_dict) not in intent_dict.keys
+assert identify_intent(question8, intent_dict) == "generic"
 assert identify_intent(question9, intent_dict) == "person"
 assert identify_intent(question10, intent_dict) == "person"
