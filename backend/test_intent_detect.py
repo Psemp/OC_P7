@@ -1,8 +1,8 @@
-import json, pathlib
 
-from static.algorythm import identify_intent
+import json
+from script.algorythm import identify_intent
 
-with open('GrandPyApp/static/resources/intents.json') as f:
+with open('resources/intents.json') as f:
     intent_set = json.load(f)
 
 intent_dict = {}
