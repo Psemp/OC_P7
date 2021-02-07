@@ -28,10 +28,10 @@ def test_intent(intent_dict):
     assert identify_intent(string_modification(q2), intent_dict) == "location"
     assert identify_intent(string_modification(q3), intent_dict) == "location"
     assert identify_intent(string_modification(q4), intent_dict) == "funny"
-    # assert identify_intent(string_modification(q5), intent_dict) == "generic"
+    assert identify_intent(string_modification(q5), intent_dict) == "generic"
     assert identify_intent(string_modification(q6), intent_dict) == "date"
     assert identify_intent(string_modification(q7), intent_dict) == "funny"
-    # assert identify_intent(string_modification(q8), intent_dict) == "generic"
+    assert identify_intent(string_modification(q8), intent_dict) == "generic"
     assert identify_intent(string_modification(q9), intent_dict) == "person"
     assert identify_intent(string_modification(q10), intent_dict) == "person"
 
