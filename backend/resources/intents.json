@@ -1,7 +1,7 @@
 {
     "date":["quand","a quelle date","annee","date","lannee"],
 
-    "location" : ["ou","ou est","ou se trouve","ou trouver","situe", "quelle est"],
+    "location":["ou est","ou se trouve","ou trouver","situe", "quelle est"],
         
     "person":["quelle personne", "qui est", "qui a"],
         

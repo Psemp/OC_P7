@@ -18,7 +18,6 @@ def remove_accents(phrase):
     for character in phrase:
         if character == "é" or character == "è" or character == "ê":
             corrected_phrase = corrected_phrase + "e"
-
         elif character == "à":
             corrected_phrase = corrected_phrase + "a"
         elif character == "ù":
@@ -36,7 +35,17 @@ def string_modification(phrase):
     return(phrase)
 
 
-def identify_intent(user_question, intent_dict):
+def identify_intent(user_question):
+    import json
+
+    with open('resources/intents.json') as f:
+        intent_set = json.load(f)
+
+    intent_dict = {}
+
+    for intent in intent_set:
+        intent_dict[intent] = intent_set[intent]
+
     for key in intent_dict:
         for intent in intent_dict[key]:
             if (user_question.find(intent) == -1):
