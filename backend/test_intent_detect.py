@@ -18,12 +18,12 @@ def test_intent():
     assert identify_intent(string_modification(q2)) == "location"
     assert identify_intent(string_modification(q3)) == "location"
     assert identify_intent(string_modification(q4)) == "funny"
-    assert identify_intent(string_modification(q5)) == "generic"
+    assert identify_intent(string_modification(q5)) is None
     assert identify_intent(string_modification(q6)) == "date"
     assert identify_intent(string_modification(q7)) == "funny"
-    assert identify_intent(string_modification(q8)) == "generic"
+    assert identify_intent(string_modification(q8)) is None
     assert identify_intent(string_modification(q9)) == "person"
     assert identify_intent(string_modification(q10)) == "person"
 
 
-print(identify_intent(q5))
+test_intent()

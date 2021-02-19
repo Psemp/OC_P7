@@ -1,7 +1,7 @@
 
 def remove_punctuation(phrase):
 
-    punctuation = '''!()-[];:",<>./?@#$%^&*_~'''
+    punctuation = '''!'()-[];:",<>./?@#$%^&*_~'''
     corrected_phrase = ""
 
     for character in phrase:
@@ -35,10 +35,23 @@ def string_modification(phrase):
     return(phrase)
 
 
+def subfinder(large_list, sublist):
+    matches = []
+
+    for i in range(len(large_list)):
+        if large_list[i] == sublist[0] and large_list[i:i+len(sublist)] == sublist:
+            matches.append(sublist)
+
+    if len(matches) >= 1:
+        return True
+    else:
+        return False
+
+
 def identify_intent(user_question):
     import json
 
-    with open('resources/intents.json') as f:
+    with open("resources/intents.json") as f:
         intent_set = json.load(f)
 
     intent_dict = {}
@@ -48,17 +61,14 @@ def identify_intent(user_question):
 
     for key in intent_dict:
         for intent in intent_dict[key]:
-            if (user_question.find(intent) == -1):
-                continue
-            else:
-                print(key)
+            if subfinder(user_question.split(), intent.split()) is True:
                 return key
 
 
 def data_cleaning(user_question):
     import json
 
-    with open('resources/stopwords-fr.json') as f:
+    with open("resources/stopwords-fr.json") as f:
         stopwords = json.load(f)
 
     user_question = user_question.split()
