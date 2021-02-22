@@ -1,6 +1,6 @@
 
 def remove_punctuation(phrase):
-
+    """returns a phrase without punctuation or special characters"""
     punctuation = '''!'()-[];:",<>./?@#$%^&*_~'''
     corrected_phrase = ""
 
@@ -12,7 +12,7 @@ def remove_punctuation(phrase):
 
 
 def remove_accents(phrase):
-
+    """returns a string with accents removed"""
     corrected_phrase = ""
 
     for character in phrase:
@@ -36,6 +36,7 @@ def string_modification(phrase):
 
 
 def subfinder(large_list, sublist):
+    """looks for a pattern(sublist) into largelist and returns True if pattern found"""
     matches = []
 
     for i in range(len(large_list)):
@@ -49,6 +50,7 @@ def subfinder(large_list, sublist):
 
 
 def identify_intent(user_question):
+    """returns the intent found in user_question by using subfinder() on a json file"""
     import json
 
     with open("resources/intents.json") as f:
@@ -66,6 +68,7 @@ def identify_intent(user_question):
 
 
 def data_cleaning(user_question):
+    """returns a string without stopwords contained in stopwords-fr.json"""
     import json
 
     with open("resources/stopwords-fr.json") as f:
