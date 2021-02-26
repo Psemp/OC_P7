@@ -2,7 +2,7 @@ from models.question import Question
 from script.algorithm import data_cleaning, identify_intent, string_modification
 from script.wikisearch import get_wiki_extract, get_page_info
 
-test_string = "Coucou, ou est le golden Gate ?"
+test_string = "Qui a ecrit le Petit Prince ?"
 
 clean_string = string_modification(test_string)
 test_intent = identify_intent(clean_string)
