@@ -29,6 +29,7 @@ def remove_accents(phrase):
 
 
 def string_modification(phrase):
+    """returns a string (phrase) whitout punctuation, accents or caps"""
     phrase = phrase.lower()
     phrase = remove_punctuation(phrase)
     phrase = remove_accents(phrase)

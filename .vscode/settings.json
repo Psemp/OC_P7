@@ -7,9 +7,16 @@
         "--max-line-length=120"
     ],
     "python.testing.pytestArgs": [
-        "backend"
+        "GrandPyApp"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./GrandPyApp",
+        "-p",
+        "test*.py"
+    ]
 }
