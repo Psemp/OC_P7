@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+from script.question_processing import question_processing
 
 app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def index():
 def data_processing():
 
     question = request.form['question']
-    answer = question.upper()
+    answer = question_processing(question)
 
     return jsonify({'answer': answer})
 

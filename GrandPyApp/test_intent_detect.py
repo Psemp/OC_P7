@@ -1,5 +1,5 @@
 
-from script.algorithm import identify_intent, string_modification
+from script.actions_on_str import identify_intent, string_modification
 
 q1 = "Quelle est la capitale de la France"
 q2 = "Ou se trouve le MuCem "

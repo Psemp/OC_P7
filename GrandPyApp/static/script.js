@@ -10,7 +10,7 @@ $("document").ready(function(){
             type: "POST",
             data: {"question": question},
         }).done(function(data) {
-            $('#question').val(data['answer']);
+            $('#answer').html(data['answer']);
             console.log(data);
         });
     });
