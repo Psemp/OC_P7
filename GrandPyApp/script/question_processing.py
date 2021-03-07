@@ -27,11 +27,11 @@ def question_processing(user_query):
         user_question.maplink = get_embed_map(coords)
 
     if user_question.intent != "location":
-        html_return = f"""<span>{quote} {user_question.wiki_extract} -- <br>
+        html_return = f"""<span >{quote} {user_question.wiki_extract} -- <br>
         <a href="{user_question.true_url}" target="_blank" style="color:white">Tu peux en savoir plus ici !</a>
         </span>"""
     elif user_question.intent == "location":
-        html_return = f"""<span>{quote} {user_question.wiki_extract} -- <br>
+        html_return = f"""<span >{quote} {user_question.wiki_extract} -- <br>
         <a href="{user_question.true_url}" target="_blank" style="color:white">Tu peux en savoir plus ici !</a>
         <br><img src="{user_question.maplink}" alt="Map Image" width="400" height="400"></span>"""
 

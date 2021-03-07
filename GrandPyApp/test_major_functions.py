@@ -1,5 +1,8 @@
+from math import trunc
 from script.actions_on_str import string_modification
 from script.actions_on_str import data_cleaning, identify_intent
+from script.wikisearch import get_page_info
+from script.maps_search import get_coords
 
 
 q1 = "Quelle est la capitale de la France"
@@ -28,11 +31,14 @@ def test_intent():
     assert identify_intent(string_modification(q10)) == "person"
 
 
-test_string = "Ou EST le GoldEN !    Gate ??"
+test_string = "Ou EST le GoldEN Gate !??"
 
 test_clean_string = string_modification(test_string)
 test_usr_intent = identify_intent(test_clean_string)
 test_target = data_cleaning(test_clean_string)
+test_wiki_page = get_page_info(test_target)
+test_wiki_url = f"https://fr.wikipedia.org/?curid={test_wiki_page[0]}"
+test_coordinates = get_coords(test_target)
 
 
 def test_question_intent():
@@ -45,6 +51,27 @@ def test_target_attribution():
     assert test_target == "golden gate"
 
 
+def test_data_cleaning():
+    """tests if test string punctuation/accents and caps are removed"""
+    assert test_clean_string == "ou est le golden gate "
+
+
+def test_wiki():
+    """tests if wiki url requested from API points to Golden Gate wiki page"""
+    assert test_wiki_url == "https://fr.wikipedia.org/?curid=40490"
+
+
+def test_maps_coordinates():
+    """tests if the coordinates returned by google maps API are roughly the same"""
+    """as the ones found on www.gps-latitude-longitude.com for test_target"""
+    """golden gate bridge is approximately 37 lat / -122 lon, we use math.trunc to discard the decimals"""
+    assert trunc(test_coordinates[0]) == 37
+    assert trunc(test_coordinates[1]) == -122
+
+
 test_intent()
 test_question_intent()
 test_target_attribution()
+test_data_cleaning()
+test_wiki()
+test_maps_coordinates()
