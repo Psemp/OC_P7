@@ -3,7 +3,8 @@ import requests
 
 def get_coords(target):
     """returns list of coordinates (lat/lon) of target on Google Place"""
-    key = "AIzaSyAZsG6c0kXUbEbztvmFY2FGed8BXtDLCcc"
+    import os
+    key = os.environ.get('GOOGLE_KEY')
     url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={target}&key={key}"
     r = requests.get(url)
     result = r.json()
@@ -15,7 +16,8 @@ def get_coords(target):
 
 def get_embed_map(coords):
     """returns link of image map centered at coords"""
-    key = "AIzaSyAZsG6c0kXUbEbztvmFY2FGed8BXtDLCcc"
+    import os
+    key = os.environ.get('GOOGLE_KEY')
     lat = coords[0]
     lon = coords[1]
     map_url = f"https://maps.googleapis.com/maps/api/staticmap?center={lat},{lon}&zoom=15&size=400x400&key={key}"
