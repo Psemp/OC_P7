@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from script.question_processing import question_processing
+from models.question import Question
+
 
 app = Flask(__name__)
 
@@ -13,8 +15,9 @@ def index():
 @app.route('/process', methods=['GET', 'POST'])
 def data_processing():
 
-    question = request.form['question']
-    answer = question_processing(question)
+    user_query = request.form['question']
+    user_question = Question()
+    answer = question_processing(user_query, user_question)
 
     return jsonify({'answer': answer})
 

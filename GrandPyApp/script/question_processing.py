@@ -1,11 +1,11 @@
-from models.question import Question
+
 from script.actions_on_str import string_modification
 from script.actions_on_str import data_cleaning, identify_intent
 from script.wikisearch import get_page_info, get_wiki_extract
 from script.maps_search import get_coords, get_embed_map
 
 
-def question_processing(user_query):
+def question_processing(user_query, user_question):
     """returns user_question object w/ all relevant data for usr"""
     import json
     import random
@@ -16,11 +16,12 @@ def question_processing(user_query):
     quote_list = humanization["quotes"]
     quote = random.choice(quote_list)
     clean_string = string_modification(user_query)
-    user_intent = identify_intent(clean_string)
-    user_target = data_cleaning(clean_string)
     wiki_page_info = get_page_info(clean_string)
-    wiki_extract = get_wiki_extract(wiki_page_info[1])
-    user_question = Question(user_target, user_intent, wiki_page_info[0], wiki_extract)
+
+    user_question.intent = identify_intent(clean_string)
+    user_question.target = data_cleaning(clean_string)
+    user_question.wiki_extract = get_wiki_extract(wiki_page_info[1])
+    user_question.true_url = f"https://fr.wikipedia.org/?curid={wiki_page_info[0]}"
 
     if user_question.intent == "location":
         coords = get_coords(user_question.target)
