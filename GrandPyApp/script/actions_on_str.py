@@ -1,3 +1,5 @@
+import json
+
 
 def remove_punctuation(phrase):
     """returns a phrase without punctuation or special characters"""
@@ -52,7 +54,6 @@ def subfinder(large_list, sublist):
 
 def identify_intent(user_question):
     """returns the intent found in user_question by using subfinder() on a json file"""
-    import json
 
     with open("resources/intents.json") as f:
         intent_set = json.load(f)
@@ -70,7 +71,6 @@ def identify_intent(user_question):
 
 def data_cleaning(user_question):
     """returns a string without stopwords contained in stopwords-fr.json"""
-    import json
 
     with open("resources/stopwords-fr.json") as f:
         stopwords = json.load(f)

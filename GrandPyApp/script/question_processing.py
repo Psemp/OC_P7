@@ -1,16 +1,15 @@
+import json
+import random
 
-from script.actions_on_str import string_modification
-from script.actions_on_str import data_cleaning, identify_intent
-from script.wikisearch import get_page_info, get_wiki_extract
-from script.maps_search import get_coords, get_embed_map
+from .actions_on_str import string_modification
+from .actions_on_str import data_cleaning, identify_intent
+from .wikisearch import get_page_info, get_wiki_extract
+from .maps_search import get_coords, get_embed_map
 
 
 def question_processing(user_query, user_question):
-    """returns user_question object w/ all relevant data for usr"""
-    import json
-    import random
-
-    with open("resources/humanization.json") as f:
+    """returns html code w/ all relevant data for usr"""
+    with open("grandpyapp/resources/humanization.json") as f:
         humanization = json.load(f)
 
     quote_list = humanization["quotes"]
