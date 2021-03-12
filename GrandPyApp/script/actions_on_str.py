@@ -55,7 +55,7 @@ def subfinder(large_list, sublist):
 def identify_intent(user_question):
     """returns the intent found in user_question by using subfinder() on a json file"""
 
-    with open("resources/intents.json") as f:
+    with open("grandpyapp/resources/intents.json") as f:
         intent_set = json.load(f)
 
     intent_dict = {}
@@ -72,7 +72,7 @@ def identify_intent(user_question):
 def data_cleaning(user_question):
     """returns a string without stopwords contained in stopwords-fr.json"""
 
-    with open("resources/stopwords-fr.json") as f:
+    with open("grandpyapp/resources/stopwords-fr.json") as f:
         stopwords = json.load(f)
 
     user_question = user_question.split()

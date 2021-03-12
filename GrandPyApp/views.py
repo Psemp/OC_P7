@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
-from script.question_processing import question_processing
-from models.question import Question
+from .script.question_processing import question_processing
+from .models.question import Question
 
 
 app = Flask(__name__)

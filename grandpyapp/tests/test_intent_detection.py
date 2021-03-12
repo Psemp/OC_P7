@@ -1,8 +1,8 @@
 from math import trunc
-from script.actions_on_str import string_modification
-from script.actions_on_str import data_cleaning, identify_intent
-from script.wikisearch import get_page_info
-from script.maps_search import get_coords
+from grandpyapp.script.actions_on_str import string_modification
+from grandpyapp.script.actions_on_str import data_cleaning, identify_intent
+from grandpyapp.script.wikisearch import get_page_info
+from grandpyapp.script.maps_search import get_coords
 
 
 q1 = "Quelle est la capitale de la France"
