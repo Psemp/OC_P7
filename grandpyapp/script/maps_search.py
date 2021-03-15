@@ -6,12 +6,21 @@ def get_coords(target):
     """returns list of coordinates (lat/lon) of target on Google Place"""
     key = os.environ.get('GOOGLE_KEY')
     url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={target}&key={key}"
-    r = requests.get(url)
-    result = r.json()
-    lat = result["results"][0]["geometry"]["location"]["lat"]
-    lon = result["results"][0]["geometry"]["location"]["lng"]
-    coordinates = [lat, lon]
-    return coordinates
+
+    try:
+        r = requests.get(url, timeout=1.000)
+        result = r.json()
+        lat = result["results"][0]["geometry"]["location"]["lat"]
+        lon = result["results"][0]["geometry"]["location"]["lng"]
+        coordinates = [lat, lon]
+        return coordinates
+
+    except requests.ConnectionError:
+        print("Connection error, make sure you are connected to internet")
+    except requests.Timeout:
+        print("Request has timed out")
+    except requests.RequestException:
+        print("A general error has been found")
 
 
 def get_embed_map(coords):
