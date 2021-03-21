@@ -6,6 +6,7 @@ The program uses AJAX to send a request to a Flask server which processes the Da
 
 # API usage : 
 The software uses Google Maps API and media wiki API (from wikipedia). Media Wiki is used to get the url of a user's request, Google Maps is used to get lat/lon of a target, then a map image URL is generated based on those settings.
+On windows, use flask_run_init.ps1 to create the env variable directly and use Flask run, on Unix : export FLASK_APP="grandpyapp/views.py"
 
 # Stage : 
 Awaiting deployment on Heroku

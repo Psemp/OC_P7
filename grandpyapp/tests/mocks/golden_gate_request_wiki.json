@@ -1,0 +1,106 @@
+{
+    "batchcomplete": "",
+    "continue": {
+        "sroffset": 10,
+        "continue": "-||"
+    },
+    "query": {
+        "searchinfo": {
+            "totalhits": 1987,
+            "suggestion": "golden state",
+            "suggestionsnippet": "golden state"
+        },
+        "search": [
+            {
+                "ns": 0,
+                "title": "Pont du Golden Gate",
+                "pageid": 40490,
+                "size": 74996,
+                "wordcount": 9549,
+                "snippet": "article ». Pour les articles homonymes, voir <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> (homonymie). Le pont du <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> (en anglais : <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> Bridge) est un pont suspendu américain",
+                "timestamp": "2021-02-13T16:42:06Z"
+            },
+            {
+                "ns": 0,
+                "title": "Golden Gate",
+                "pageid": 65832,
+                "size": 13541,
+                "wordcount": 1655,
+                "snippet": "Pour les articles homonymes, voir <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> (homonymie). Le <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> (en français : « la Porte dorée ») est un détroit situé aux États-Unis, à l'Ouest",
+                "timestamp": "2021-02-18T09:59:54Z"
+            },
+            {
+                "ns": 0,
+                "title": "Golden Gate Quartet",
+                "pageid": 256498,
+                "size": 11943,
+                "wordcount": 1109,
+                "snippet": "Pour les articles homonymes, voir <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> (homonymie). Cet article ne cite pas suffisamment ses sources (janvier 2014). Si vous disposez d'ouvrages",
+                "timestamp": "2021-02-04T19:26:47Z"
+            },
+            {
+                "ns": 0,
+                "title": "Parc du Golden Gate",
+                "pageid": 805157,
+                "size": 10170,
+                "wordcount": 1055,
+                "snippet": "Pour les articles homonymes, voir <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> (homonymie) et GGP. Le parc du <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> (en anglais : <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> Park ou GGP) est un espace vert américain",
+                "timestamp": "2021-01-11T10:38:18Z"
+            },
+            {
+                "ns": 0,
+                "title": "San Francisco",
+                "pageid": 2921,
+                "size": 147250,
+                "wordcount": 15019,
+                "snippet": "préférée des Français aux États-Unis, la ville est célèbre pour le pont du <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span>, l'île et ancienne prison d'Alcatraz, Fisherman's Wharf, la Transamerica",
+                "timestamp": "2021-03-08T15:56:23Z"
+            },
+            {
+                "ns": 0,
+                "title": "Golden Gate (homonymie)",
+                "pageid": 2950139,
+                "size": 1224,
+                "wordcount": 154,
+                "snippet": "Le <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span>, détroit américain reliant la baie de San Francisco à l'océan Pacifique Le <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> Bridge, pont situé enjambant le <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> Le Golden",
+                "timestamp": "2019-06-23T06:55:11Z"
+            },
+            {
+                "ns": 0,
+                "title": "Golden Gate Yacht Club",
+                "pageid": 5601359,
+                "size": 1504,
+                "wordcount": 124,
+                "snippet": "(comment ?) selon les recommandations des projets correspondants. Le <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> Yacht Club – GGYC – est un club nautique basé à San Francisco, aux États-Unis",
+                "timestamp": "2021-02-21T12:53:07Z"
+            },
+            {
+                "ns": 0,
+                "title": "Île d'Alcatraz",
+                "pageid": 76788,
+                "size": 55429,
+                "wordcount": 6283,
+                "snippet": "Californie sur la côte Ouest des États-Unis. Elle se trouve à l'est du <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span>, un bras de mer qui relie la baie à l’océan Pacifique. L'île mesure environ",
+                "timestamp": "2021-03-16T16:49:36Z"
+            },
+            {
+                "ns": 0,
+                "title": "Coupe de l'America",
+                "pageid": 24404,
+                "size": 83383,
+                "wordcount": 8914,
+                "snippet": "le jugeant comme le pire protocole dans l'histoire de l'événement. Le <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span> Yacht Club (GGYC), va alors proposer son propre défi pour la Coupe et",
+                "timestamp": "2021-03-17T18:29:57Z"
+            },
+            {
+                "ns": 0,
+                "title": "Gate",
+                "pageid": 954444,
+                "size": 4301,
+                "wordcount": 470,
+                "snippet": "Wikimedia : <span class=\"searchmatch\">gate</span>, sur le Wiktionnaire <span class=\"searchmatch\">Gate</span> est un mot anglais qui peut se traduire par porte ou portail. <span class=\"searchmatch\">Golden</span> <span class=\"searchmatch\">Gate</span>, pont de San Francisco <span class=\"searchmatch\">Gate</span> Tower, immeuble",
+                "timestamp": "2020-11-14T15:49:24Z"
+            }
+        ]
+    }
+}

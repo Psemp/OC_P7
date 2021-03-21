@@ -8,12 +8,9 @@ def get_coords(target):
     url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={target}&key={key}"
 
     try:
-        r = requests.get(url, timeout=1.000)
+        r = requests.get(url, timeout=2.000)
         result = r.json()
-        lat = result["results"][0]["geometry"]["location"]["lat"]
-        lon = result["results"][0]["geometry"]["location"]["lng"]
-        coordinates = [lat, lon]
-        return coordinates
+        return extract_coordinates(result)
 
     except requests.ConnectionError:
         print("Connection error, make sure you are connected to internet")
@@ -30,3 +27,10 @@ def get_embed_map(coords):
     lon = coords[1]
     map_url = f"https://maps.googleapis.com/maps/api/staticmap?center={lat},{lon}&zoom=15&size=400x400&key={key}"
     return map_url
+
+
+def extract_coordinates(result):
+    lat = result["results"][0]["geometry"]["location"]["lat"]
+    lon = result["results"][0]["geometry"]["location"]["lng"]
+    coordinates = [lat, lon]
+    return coordinates

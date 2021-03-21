@@ -1,0 +1,51 @@
+{
+    "html_attributions": [],
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "formatted_address": "Golden Gate Bridge, San Francisco, CA, United States",
+            "geometry": {
+                "location": {
+                    "lat": 37.8199286,
+                    "lng": -122.4782551
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.84491060000001,
+                        "lng": -122.47297315
+                    },
+                    "southwest": {
+                        "lat": 37.79509019999999,
+                        "lng": -122.4837965500001
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "name": "Golden Gate Bridge",
+            "photos": [
+                {
+                    "height": 452,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111527378491489366947\">A Google User</a>"
+                    ],
+                    "photo_reference": "ATtYBwLdJ0b2Dzo2I2W7F3Y6v1IsIwQqyv1nMARxd3DRttgKhfHh-7zd3qRE7aqaUmxOfwGikzpsm8THX17w8T-_eUHJInKybzSEMr7eLHAIqMkQMlxQlukUA8r4onOkp26rtygxMr7_smwyso0sVo21hmzX52T6Jhj-M9ENcCpHq9ev8Vf9",
+                    "width": 612
+                }
+            ],
+            "place_id": "ChIJw____96GhYARCVVwg5cT7c0",
+            "plus_code": {
+                "compound_code": "RG9C+XM Sausalito, California, United States",
+                "global_code": "849VRG9C+XM"
+            },
+            "rating": 4.8,
+            "reference": "ChIJw____96GhYARCVVwg5cT7c0",
+            "types": [
+                "tourist_attraction",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 49210
+        }
+    ],
+    "status": "OK"
+}
