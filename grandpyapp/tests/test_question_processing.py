@@ -1,39 +1,10 @@
 from grandpyapp.script.question_processing import question_processing
 from grandpyapp.models.question import Question
 
-# FUNCTIONS RECREATED TO CONTROL THE ENVIRONMENT OF QUESTION PROCESSING EXECUTION #
-# this does not work #
-
-
-def string_modification(user_query):
-    return "ou se trouve le golden gate "
-
-
-def data_cleaning(clean_string):
-    return "golden gate"
-
-
-def identify_intent(clean_string):
-    return "location"
-
-
-def get_page_info(clean_string):
-    return [40490, "Pont du Golden Gate"]
-
-
-def get_wiki_extract(mock_title):
-    return "wikipedia page extract"
-
-
-def get_coords(target):
-    [0, 0]
-
-
-def get_embed_map(mock_coords):
-    return "embed map url"
-
-
-# FUNCTIONS RECREATED TO CONTROL THE ENVIRONMENT OF QUESTION PROCESSING EXECUTION #
+from grandpyapp.script.actions_on_str import string_modification
+from grandpyapp.script.actions_on_str import data_cleaning, identify_intent
+from grandpyapp.script.wikisearch import get_page_info, get_wiki_extract
+from grandpyapp.script.maps_search import get_coords, get_embed_map
 
 test_query = "Ou se trouve le Golden Gate ?"
 test_question = Question()
