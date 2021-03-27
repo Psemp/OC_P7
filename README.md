@@ -9,7 +9,10 @@ The software uses Google Maps API and media wiki API (from wikipedia). Media Wik
 On windows, use flask_run_init.ps1 to create the env variable directly and use Flask run, on Unix : export FLASK_APP="grandpyapp/views.py"
 
 # Stage : 
-Awaiting deployment on Heroku
+Deployed on Heroku @ https://grandpyapp-sempp.herokuapp.com/
+
+# Note :
+In script.js line 9, "url: "http://localhost:5000/process"," is used. Localhost is kept to launch and use the server locally. It has been modified for deployment.
 
 # Background art :
 The background art is made by artist Benjamin Last @https://www.artstation.com/blast
