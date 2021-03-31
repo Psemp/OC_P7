@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Poiret';
         src: url("../static/fonts/PoiretOne-Regular.ttf");
@@ -129,4 +128,46 @@ body{
     background-size: cover;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+    .row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #question {
+        margin: 0;
+        font-size: 1.1em;
+        width: 80%;
+        max-width: 80%;
+        position: relative;
+        margin-left: 20%;
+    }
+
+    #validate {
+        font-size: 1em;
+        width: 65%;
+        border: none;
+        position: relative;
+    }
+
+    #answer {
+        font-size: 0.8em;
+        padding: 0;
+        margin: 10px;
+        text-align: justify;
+        position: relative;
+    }
+
+    #answer > span > img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .image-fluid{
+        display: none;
+    }
+    .footer{
+        font-size: 1em;
+    }
 }

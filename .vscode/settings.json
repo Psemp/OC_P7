@@ -18,5 +18,6 @@
         "./GrandPyApp",
         "-p",
         "test*.py"
-    ]
+    ],
+    "python.pythonPath": "env\\Scripts\\python.exe"
 }
