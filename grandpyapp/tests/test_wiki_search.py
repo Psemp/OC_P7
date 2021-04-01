@@ -16,7 +16,6 @@ test_sentences = extract_sentences(mock_extract)
 
 
 def test_extract_info():
-    print("mock")
     assert test_infos == [40490, "Pont du Golden Gate"]
 
 
